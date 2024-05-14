@@ -1,0 +1,108 @@
+---
+permalink: /robotics_conferences_analyzed/
+---
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head class="has-navbar-fixed-top">
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>{{ site.name }}</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!--script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', '{{ site.google_analytics }}');
+  </script-->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+  <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer src="{{ '/js/fontawesome.all.min.js' | relative_url }}"></script>
+  <script src="{{ '/js/index.js' | relative_url }}"></script>
+
+</head>
+
+<body>
+
+  <!--somehow bulma navbar doesn't take space on page, so I insert a div element-->
+  <div style="height: 3.25rem;"></div>
+
+  <nav class="navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" style="text-align:right" href='/'>
+          Homepage
+        </a>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <section class="section">
+    <div class="container is-max-desktop blogpost">
+
+      <h2 class="title is-3 anchor" id="publications">Robotics Conferences Analyzed</h2>
+
+      <p class="content has-text-justified">I analyzed the contributions for robotics conferences. The data is from <a href="https://ras.papercept.net">ras.papercept.net</a>. The source code for generating the plots is <a href="https://github.com/OliEfr/ICRA_2024_analyzer">here</a>. The source code also explains possible limitations of this project.</p>  
+      
+      {% for conference in site.data.robotics_conferences_analyzed %}
+      <h2 class="title is-4 anchor" style="margin-top: 1.5em;" id="{{conference.name}}">{{conference.name}}</h2>
+
+        {% for image in conference.images %}
+
+        <img alt="{{ conference.name }}" class="conference_analyzed" src="/{{ image }}" /> 
+
+        {% endfor %}
+      {% endfor %}
+
+    </div>
+  </section> 
+
+     
+  <footer class="footer">
+    <div class="container">
+      <div class="content footer-links has-text-centered">
+        <a href="mailto:{{ site.email }}">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a class="external-link" href="https://github.com/OliEfr/ICRA_2024_analyzer">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Visit the main page of <a href="https://oliver.hausdoerfer.de/">Oliver Hausdörfer</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
