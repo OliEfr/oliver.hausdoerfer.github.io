@@ -2,3 +2,7 @@
   images: ["images/authors_contributions_ICRA_2024.svg", "images/keywords_contributions_ICRA_2024.svg", "images/university_contributions_ICRA_2024.svg"]
 - name: ROBOSOFT 2024
   images: ["images/keywords_contributions_ROBOSOFT_2024.svg", "images/authors_contributions_ROBOSOFT_2024.svg"]
+- name: "International Conference on Ubiquitous Robots (UR) 2024"
+  images: ["images/authors_contributions_International Conference on Ubiquitous Robots (UR) 2024.svg", "images/keywords_contributions_International Conference on Ubiquitous Robots (UR) 2024.svg"]
+- name: "International Conference on Advanced Robotics and Its Social Impacts (ARSO) 2024"
+  images: ["images/keywords_contributions_ARSO_2024.svg"]
