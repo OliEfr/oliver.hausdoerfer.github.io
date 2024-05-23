@@ -26,7 +26,7 @@ description: >-
   I am a PhD candidate at [Prof. Schoellig](https://www.ce.cit.tum.de/lsy/prof-angela-schoellig/)'s lab at Technical University of Munich. My main interests include control for complex systems, reinforcement learning, and robotics. Previously, I completed a M.Sc. degree in Robotics at TUM, and wrote my master's thesis with [Prof. Ijspeert](https://www.epfl.ch/labs/biorob/). I was at [Robert Bosch GmbH](https://www.bosch.de/) and in the [Formula Student](https://elbflorace.de/).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "oliver.hausdoerfer.de" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: KeunhongP
+twitter_username: OliHausdorfer
 github_username: OliEfr
 # google_scholar: HVZb-5oAAAAJ
 #google_analytics: G-MFWSBLRKG0
